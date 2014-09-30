@@ -3,69 +3,126 @@
 
     <!-- Add all meta data into head -->
     <head>
+	<!-- Site Title -->
 	<title>Morgan Aw - Software Developer, Gaming Enthusiast, Amateur Chef</title>
+
+	<!-- Meta Tags -->
 	<meta name="description" content="Morgan Aw's personal website">
 	<meta name="keywords" content="Morgan, Aw, Morgan Aw, software developer">
 	<meta name="author" content="Morgan Aw">
 	<meta charset="UTF-8">
-	<link rel="stylesheet" href="garnish.css" type="text/css">
+
+	<!-- Link Refs -->
+	<link rel="stylesheet" href="CSS/bootstrap.min.css" type="text/css">
+	<link rel="stylesheet" href="CSS/garnish.css" type="text/css">
 	<link rel="icon" type="image/png" href="favicon.ico">
+	<link href='http://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
+
     </head>
 
-    <!-- Add all visible content into body -->
-    <body>
-	<!-- Banner Image -->
-	<div id="banner">
-	    <img src="Images/Banner_Image.jpg"></img>
-	</div>
+	<!-- All the visible stuff -->
+	<body>
 
-	<!-- Navigation Bar -->
-	<div id="navbar">
-	    <ul>
-		<li><a href="index.html">About Me</a></li>
-		<li><a href="projects.html">Projects</a></li>
-		<li><a href="fun.html">For Fun</a></li>
-		<li><a href="contact.html">Contact Me</a></li>
-	    </ul>
-	</div>
+		<!-- Navigation Bar -->
+		<div class="navbar navbar-default navbar-static-top">
+			<div class="container-fluid">
+				<div class="col-lg-10">
+					<ul class="nav navbar-nav navbar-right">
+						<li class="top-nav top-nav-active"><a href="#" id="intro-top" style="margin:0px; padding-top: 3px; padding-bottom: 2px;"><img src="Images/Logo2.png"></a></li>
+						<li class="top-nav"><a href="#" id="about-top">About Me</a></li>
+						<li class="top-nav"><a href="#" id="projects-top">Projects</a></li>
+						<li class="top-nav"><a href="#" id="fun-top">Extracurriculars</a></li>
+						<li class="top-nav"><a href="#" id="contact-top">Contact Me</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
 
-	<!-- Contains everything below the navbar -->
-	<div id="content">
-		<img id="prof_pic" src="Images/Profile_Pic.jpg"></img>
-	    <p>
-		Hi there and welcome to my website!
-		</p>
-		<p>
-		My name is Morgan Aw and I am a recent graduate from the University of
-		California,	Merced with a BS in Computer Science and Engineering. While
-		I graduated	with a degree in CSE, I studied 4 years of Mechanical
-		Engineering before realizing I didn’t enjoy being an ME as much as I
-		thought I would so I decided to switch majors.
-		</p>
-		<p>
-		Because of my late transition to Computer Science, I don’t have a lot of
-		the practical experiences that might be expected of	me so I’m now actively
-		seeking opportunities to learn new skills and gain meaningful experiences.
-		That being said, I would be happy to contribute my skills to any projects
-		I come across (so long as I think I’ll be able to pull my own weight).
-		</p>
-		<p>
-		When I’m not working on projects, I enjoy playing Dota 2, Hearthstone, and
-		have recently started playing CS:GO. I also like playing squash, cooking,
-		and baking too!
-	    </p>
-		<!--
-			Add these in later:
-			Proficiencies [expand]
-			Personal Projects [expand]
-			-	Improving this website
-			-	Create a simple mobile app
-		-->
-	</div>
-	<div id="footer">
-		&nbsp;&nbsp;&nbsp;&nbsp;Created By: Morgan Aw
-		<br />
-		&nbsp;&nbsp;&nbsp;&nbsp;Last updated: 5/28/2014
-	</div>
+		<!-- All Body Content -->
+		<div class="container-fluid full-height">
+
+			<!-- Previous Arrow -->
+			<div class="col-lg-1 col-lg-offset-1 arrow-box">
+				<a href="#" class="arrow-prev"><img src="Images/arrow-prev-lrg.png"></a>
+			</div>
+
+			<div class="col-lg-8 page active-page" id="intro">
+				<h1>Morgan&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1>
+				<h1>Aw</h1>
+				<br/>
+				<br/>
+				Version 2.0 Coming Soon!
+				<!--
+				<p>Software Programmer</p>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;</p>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Self-Taught Web Developer</p>
+				-->
+			</div>
+
+			<!-- About Me Page -->
+			<div class="col-lg-8 page" id="about">
+				<h1>Morgan&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1>
+				<h1>Aw</h1>
+				<br/>
+				<br/>
+				Version 2.0 Coming Soon!
+			</div>
+
+			<!-- Projects Page -->
+			<div class="col-lg-8 page" id="projects">
+				<h1>Morgan&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1>
+				<h1>Aw</h1>
+				<br/>
+				<br/>
+				Version 2.0 Coming Soon!
+			</div>
+
+			<!-- Extracurriculars Page -->
+			<div class="col-lg-8 page" id="fun">
+				<h1>Morgan&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1>
+				<h1>Aw</h1>
+				<br/>
+				<br/>
+				Version 2.0 Coming Soon!
+			</div>
+
+			<!-- Contact Page -->
+			<div class="col-lg-8 page" id="contact">
+				<h1>Morgan&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1>
+				<h1>Aw</h1>
+				<br/>
+				<br/>
+				Version 2.0 Coming Soon!
+			</div>
+
+			<!-- Next Arrow -->
+			<div class="col-lg-1 arrow-box">
+				<a href="#" class="arrow-next"><img src="Images/arrow-next-lrg.png"></a>
+			</div>
+
+		</div>
+		
+		<div class="botnav-container">
+			<ul class="dot-container">
+				<li class="dot active-dot">&nbsp;</li>
+				<li class="dot">&nbsp;</li>
+				<li class="dot">&nbsp;</li>
+				<li class="dot">&nbsp;</li>
+				<li class="dot">&nbsp;</li>
+			</ul>
+		</div>
+
+		<!-- Footer -->
+		<div class="container footer">
+			Created By: Morgan Aw&nbsp;&nbsp;&nbsp;&nbsp;
+			<br/>
+			Last updated: 7/16/2014&nbsp;&nbsp;&nbsp;&nbsp;
+		</div>
+
+		<!-- jQuery API -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<!-- My Javascript -->
+		<script src="Javascript/fancy.js"></script>
     </body>
+
 </html>

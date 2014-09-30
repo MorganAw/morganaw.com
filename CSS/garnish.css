@@ -1,0 +1,173 @@
+html{
+	height: 100%;
+}
+
+body{
+	/* --== Box Styling ==-- */
+	background-color: #FFFFFF;
+	padding: 0px;
+	margin: 0px auto;
+	height: calc(100% - 71px);
+	/* --== Text Styling ==-- */
+	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+	font-size: 16px;
+	color: #353535;
+	overflow: hidden;
+}
+
+/* --=={ NAVIGATION BAR STYLING }==-- */
+.top-nav-active{
+	border-bottom: 2px solid black;
+}
+
+/* --=={ MAIN BODY STYLING }==-- */
+.page{
+	display: none;
+	font-size: 24px;
+	overflow: auto;
+}
+
+
+.active-page{
+	position: relative;
+	display: block;
+}
+
+/* --=={ BOTTOM NAVIGATION PANE STYLING }==-- */
+.botnav-container{
+	text-align: center;
+	position: relative;
+	bottom: 75px;
+}
+
+.full-height{
+	height: 100%;
+}
+
+.arrow-box{
+	top: 42%;
+}
+
+.arrow-prev, .arrow-next{
+	height: 100%;
+	position: relative;
+	text-align: right;
+}
+
+.arrow-prev img, .arrow-next img{
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
+}
+
+.dot-container{
+	margin: 0px 15px 0px 15px;
+	padding: 0px 0px 0px 0px;
+	display: inline;
+}
+
+.dot{
+	background-color: #777777;
+	border-radius: 3px;
+	width: 6px;
+	height: 6px;
+	margin: 0px 5px 0px 5px;
+	display: inline-block;
+}
+
+.active-dot{
+	background-color: #000000;
+}
+
+.test{
+	display: block;
+	background-color: #000000;
+	position: absolute;
+	left: 100px;
+	top: 100px;
+	border-radius: 2px;
+	width: 4px;
+	height: 4px;
+}
+
+#intro{
+	background: url(../Images/background.png);
+	height: calc(100% - 96px);
+	text-align: right;
+	padding-top: 1.2%;
+}
+
+
+#intro h1{
+	font-weight: normal;
+	font-size: 52px;
+	padding-right: 19%;
+}
+
+
+#intro p{
+	font-size: 32px;
+	text-align: left;
+	padding-left: 55%;
+}
+
+#about{
+	background: url(../Images/background.png);
+	height: calc(100% - 96px);
+	text-align: right;
+	padding-top: 1.2%;
+}
+
+#about h1{
+	font-weight: normal;
+	font-size: 52px;
+	padding-right: 19%;
+}
+
+#projects{
+	background: url(../Images/background.png);
+	height: calc(100% - 96px);
+	text-align: right;
+	padding-top: 1.2%;
+}
+
+#projects h1{
+	font-weight: normal;
+	font-size: 52px;
+	padding-right: 19%;
+}
+
+#fun{
+	background: url(../Images/background.png);
+	height: calc(100% - 96px);
+	text-align: right;
+	padding-top: 1.2%;
+}
+
+#fun h1{
+	font-weight: normal;
+	font-size: 52px;
+	padding-right: 19%;
+}
+
+#contact{
+	background: url(../Images/background.png);
+	height: calc(100% - 96px);
+	text-align: right;
+	padding-top: 1.2%;
+}
+
+#contact h1{
+	font-weight: normal;
+	font-size: 52px;
+	padding-right: 19%;
+}
+
+/* --=={ FOOTER STYLING }==-- */
+.footer{
+	position: fixed;
+	bottom: 10px;
+	/* --== Text Styling ==-- */
+	font-size: 12px;
+	width: 100%;
+	text-align:right;
+}
