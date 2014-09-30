@@ -93,8 +93,8 @@ var main = function(){
 		shiftNextEtc(thisDot, nextDot, thisNav, nextNav);
     });
 
-//	--== Extracurriculars Click ==--
-    $("#fun-top").click(function(){
+//	--== Contact Click ==--
+    $("#contact-top").click(function(){
 		// Declare pages to be swapped
 		var thisPage = $(".active-page");
 		var nextPage = $(".page:eq( 3 )");
