@@ -1,0 +1,127 @@
+body{
+	/* --=={ Box Styling }==-- */
+	background-color: #056194;
+	padding: 0px;
+	margin: 0px auto;
+	/* --=={ Text Styling }==-- */
+	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+	color: #FFFFFF;
+	text-align: center;
+	overflow: auto;
+}
+
+/* --=={ BANNER IMAGE STYLING }==-- */
+
+#banner{
+	/* --=={ Box Styling }==-- */
+	height: 150px;
+	width: 960px;
+	margin: 0px auto;
+}
+
+/* --=={ NAVIGATION BAR STYLING }==-- */
+
+#navbar{
+	/* --=={ Box Styling }==-- */
+	background-color: #472900;
+	width: 100%;
+	height: 50px;
+	/* --=={ Text Styling }==-- */
+	font-size: 24px;
+}
+
+
+#navbar ul{
+	/* --=={ Box Styling }==-- */
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	/* --=={ Text Styling }==-- */
+	list-style-type: none;
+}
+
+#navbar ul li{
+	/* --=={ Box Styling }==-- */
+	display: inline;
+}
+
+
+/* --=={ ALL LINK STATE STYLING }==-- */
+
+#navbar ul li a:link{
+	/* --=={ Box Styling }==--
+	 *  - Border doesn't carry over
+	 */
+	border-left: 1px solid #F2F2F2;
+	border-right: 1px solid #F2F2F2;
+	padding: 5px 10px 5px 10px;
+	/*  - This chunk below is necessary to make the link border width work
+	 *  - This chunk carries over to the other link states */
+	display: inline-block;
+	width: 188px;
+	/* left margin set to -5px to remove gap between inline-block elements */
+	margin: 5px -8px 0px 0px;
+	/* --=={ Text Styling }==--
+	 *  - Color doesn't carry over
+	 */
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+#navbar ul li a:visited{
+	/* --=={ Box Styling }==-- */
+	border-left: 1px solid #F2F2F2;
+	border-right: 1px solid #F2F2F2;
+	/* --=={ Text Styling }==-- */
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+#navbar ul li a:hover{
+	/* --=={ Text Styling }==--*/
+	text-decoration: underline;
+	color: #FFFFFF;
+}
+
+/* #navbar ul li a:active is exactly the same as hover and everything carries over from previous link states */
+
+/* --=={ MAIN BODY STYLING }==-- */
+
+#content{
+	/* --=={ Box Styling }==-- */
+	background-color: #E6F7F9;
+	border-radius: 5px;
+	height: auto;
+	width: 960px;
+	margin: 20px auto;
+	padding: 15px;
+	/* --=={ Text Styling }==-- */
+	color: #192226;
+	text-align: left;
+}
+
+#content h1{
+	margin-left: 100px;
+}
+
+#content p{
+	width: 700px;
+}
+
+#fun{
+	margin-left: 100px;
+}
+
+#prof_pic{
+	border: 3px solid #472900;
+	margin-left: 25px;
+	margin-right: 25px;
+	margin-bottom: 50px;
+	float: right;
+}
+
+#footer{
+	/* --=={ Text Styling }==-- */
+	font-size: 12px;
+	text-align:left;
+}
