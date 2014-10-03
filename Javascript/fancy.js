@@ -205,11 +205,11 @@ var swapPage = function(cur, next, direction){
 		next.css("right", "-1500px");
 		next.css("opacity", "0");
 		// Animate this page
-		cur.animate({right: "+=1500px", opacity: "0"}, 150, "swing", function(){
+		cur.animate({right: "+=1500px", opacity: "0"}, 100, "swing", function(){
 			// Remove active class after animate
 			cur.removeClass("active-page");
 			// Animate prev page and add active class
-			next.animate({right: "+=1500px", opacity: "1"}, 150, "swing", function(){
+			next.animate({right: "+=1500px", opacity: "1"}, 100, "swing", function(){
 				$(document.body).css({"overflow": "auto"});
 			}).addClass("active-page");
 		});
@@ -219,11 +219,11 @@ var swapPage = function(cur, next, direction){
 		next.css("right", "1500px");
 		next.css("opacity", "0");
 		// Animate this page
-		cur.animate({right: "-=1500px", opacity: "0"}, 150, "swing", function(){
+		cur.animate({right: "-=1500px", opacity: "0"}, 100, "swing", function(){
 			// Remove active class after animate
 			cur.removeClass("active-page");
 			// Animate prev page and add active class
-			next.animate({right: "-=1500px", opacity: "1"}, 150, "swing", function(){
+			next.animate({right: "-=1500px", opacity: "1"}, 100, "swing", function(){
 				$(document.body).css({"overflow": "auto"});
 			}).addClass("active-page");
 		});
