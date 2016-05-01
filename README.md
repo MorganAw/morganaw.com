@@ -5,7 +5,11 @@ My personal website.
 ### v1.0
 
 My very first attempt at getting into web development. This project was made
-using the very basics of HTML, CSS, and "Javascript" (a.k.a jQuery).
+using the very basics:
+
+- HTML
+- CSS
+- "Javascript" (a.k.a jQuery).
 
 ##### Known Issues
 
