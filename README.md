@@ -9,7 +9,7 @@ using the very basics:
 
 - HTML
 - CSS
-- "Javascript" (a.k.a jQuery).
+- "Javascript" (a.k.a jQuery)
 
 ##### Known Issues
 
