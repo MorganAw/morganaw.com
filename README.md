@@ -2,18 +2,14 @@
 
 My personal website.
 
-### v1.0
+### v2.0 To-do list
 
-My very first attempt at getting into web development. This project was made
-using the very basics:
-
-- HTML
-- CSS
-- "Javascript" (a.k.a jQuery).
-
-##### Known Issues
-
-If you can go between sections fast enough, you can break what is displayed. I
-haven't really reviewed my code since I first got it up and running but it's
-probably because I didn't know that I was using async methods to handle my
-animations.
+- [X] Design site
+- [ ] Set up backend
+  - [ ] Set up routes
+- [ ] Implement frontend
+  - [ ] Set up base template
+  - [ ] Create About Me section
+  - [ ] Create Skills section
+  - [ ] Create Experience section
+  - [ ] Create Contact section

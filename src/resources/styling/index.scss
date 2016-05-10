@@ -1,0 +1,40 @@
+@import './normalize.css';
+
+$header-height: 80px;
+
+#header {
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  height: $header-height;
+  top: 0px;
+}
+
+.section {
+  position: fixed;
+  margin-top: $header-height;
+  border: 1px solid black;
+  height: calc(100% - #{$header-height});
+  width: calc(100% - 2px);
+}
+
+.fixed-top {
+  position: fixed;
+  top: 0;
+}
+
+#about-me {
+  z-index: 1;
+}
+
+#skills {
+  z-index: 2;
+}
+
+#experience {
+  z-index: 3;
+}
+
+#contact {
+  z-index: 4;
+}
