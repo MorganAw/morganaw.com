@@ -43,14 +43,13 @@ window.onload = () => {
   for (let i = 0, len = nodes.length; i < len; ++i) {
     let curNode = {};
     let attrs = nodes[i].attributes;
-    let thisID  = nodes[i].attributes.getNamedItem('id').value;
 
     // Check each attribute ...
     for (let j = 0, numAttrs = attrs.length; j < numAttrs; ++j) {
       // For scroll values
       if (attrs[j].name.startsWith('scroll')) {
-        if (curNode.id === undefined) {
-          curNode['id'] = thisID;
+        if (curNode.node === undefined) {
+          curNode['node'] = nodes[i];
           curNode['styling'] = [];
         }
         let thisStyle = {
@@ -73,9 +72,11 @@ window.onload = () => {
     }
 
     if (Object.keys(curNode).length !== 0) {
+      curNode.styling.sort((el1, el2) => {
+        return el1.position - el2.position;
+      })
       styling.push(curNode);
-    }
-    console.log(styling);
+    };
   }
 };
 
@@ -84,17 +85,15 @@ window.onload = () => {
  * input <String>
  *   - Ex: 'width: 100px'
  * 
- * returns <Array>
- *   - Ex: [ 'width', 100, 'px' ]
+ * returns <Array> [ pre, value, post ]
+ *   - Ex: [ 'width:', 100, 'px' ]
  */
 function parseStyle(style) {
   let result = [];
-  let components = style.split(':');
-  let value = components[1].trim().match(/\d+/);
-
-  result.push(components[0].trim());
-  result.push(parseFloat(value));
-  result.push(components[1].trim().match(/\D+/)[0]);
+  let pre   = style.trim().match(/\D+(?!-\d+)\D/)[0];
+  let value = parseFloat(style.trim().split(/\D+(?!-\d+)\D/)[1]);
+  let post  = style.trim().match(/\D+$/)[0];
+  result.push(pre, value, post);
 
   return result;
 }
