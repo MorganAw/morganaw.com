@@ -78,6 +78,8 @@ window.onload = () => {
       styling.push(curNode);
     };
   }
+  container.style.setProperty('height', String(maxScroll) + 'px');
+  console.log(maxScroll);
 };
 
 /*
