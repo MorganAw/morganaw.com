@@ -9,7 +9,7 @@ var devtool = process.env.NODE_ENV === 'development' ? 'source-map' : null;
 module.exports = {
   devtool: 'source-map',
   entry: [
-    './src/client/client'
+    './src/client/newClient'
   ],
   output: {
     path: path.join(__dirname, 'static', 'packed'),
