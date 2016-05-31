@@ -16,6 +16,24 @@ maxScroll = 0;
 styling = [];
 
 /*
+{
+  elementID: {
+    scrollPosition: interpolatedStyle
+  }
+}
+
+Ex:
+{
+  'skills': {
+    0: 'transform: translateY(-100%)',
+    1: 'transform: translateY(-99%)',
+    ...
+    100: 'transform: translateY(0%)'
+  }
+}
+*/
+
+/*
 --- styling structure ---
 {
   id: elementID,
