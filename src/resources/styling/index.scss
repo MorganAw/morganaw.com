@@ -10,17 +10,15 @@ $header-height: 80px;
   top: 0px;
 }
 
+#scroll-container {
+  margin-top: $header-height;
+}
+
 .section {
   position: fixed;
-  margin-top: $header-height;
   border: 1px solid black;
   height: calc(100% - #{$header-height});
   width: calc(100% - 2px);
-}
-
-.fixed-top {
-  position: fixed;
-  top: 0;
 }
 
 #about-me {

@@ -5,10 +5,13 @@ My personal website.
 ### v2.0 To-do list
 
 - [X] Design site
-- [ ] Set up backend
-  - [ ] Set up routes
+- [X] Set up backend
+  - [X] Set up routes
 - [ ] Implement frontend
-  - [ ] Set up base template
+  - [X] Parse styles
+  - [ ] Interpolate frame styles
+  - [ ] Scroll listeners
+- [ ] Content
   - [ ] Create About Me section
   - [ ] Create Skills section
   - [ ] Create Experience section

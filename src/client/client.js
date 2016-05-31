@@ -50,7 +50,10 @@ Ex:
 }
 */
 
-// On dom load
+// calculate frames
+// apply frames
+
+// Parse frames on DOM load
 // check children and all properties
 // Set height of container to max ticks (largest scroll value + height)
 window.onload = () => {
@@ -74,11 +77,12 @@ window.onload = () => {
           position: 0,
           styles: []
         };
+
         // Keep track of largest scroll value and styling at each value
         let pos = parseInt(attrs[j].name.split('-')[1]);
         pos > maxScroll ? maxScroll = pos : null;
         thisStyle.position = pos;
-        
+
         let rawStyles = attrs[j].value.split(';');
         for (let k = 0, numStyles = rawStyles.length; k < numStyles; ++k) {
           rawStyles[k] !== ''
@@ -89,6 +93,7 @@ window.onload = () => {
       }
     }
 
+    // Sort styles by scroll position
     if (Object.keys(curNode).length !== 0) {
       curNode.styling.sort((el1, el2) => {
         return el1.position - el2.position;
@@ -96,10 +101,22 @@ window.onload = () => {
       styling.push(curNode);
     };
   }
+
+  // Interpolate frames and set in styling
+  for (let i = 0, len = nodes.length; i < len; ++i) {
+    let thisNode  = nodes[i].node;
+    let thisStyle = nodes[i].styling;
+
+    
+  }
+
+  container.style.setProperty('height', String(maxScroll) + 'px');
+  console.log(maxScroll);
+  console.log(styling);
 };
 
 /*
- * -----=== { paresStyle } ===-----
+ * -----=== { parseStyle } ===-----
  * input <String>
  *   - Ex: 'width: 100px'
  * 
