@@ -160,6 +160,7 @@ function interpolateStyling(rawStyles) {
           matchingStyles.push({
             pre: stylesOne[j].pre,
             valOne: stylesOne[j].value,
+            valTwo: stylesTwo[j].value,
             post: stylesOne[j].post
           });
         }
@@ -168,7 +169,7 @@ function interpolateStyling(rawStyles) {
 
     // Interpolate all styles in matchingStyles
     for (let j = 0, length = matchingStyles.length; j < length; ++j) {
-      // Interp
+      let curFrame = posOne + j;
     }
   }
 }
