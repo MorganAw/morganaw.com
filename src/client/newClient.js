@@ -56,7 +56,6 @@ window.onload = () => {
         if (curNode.element === undefined) {
           curNode['element'] = nodes[i];
           curNode['rawStyling'] = [];
-          curNode['styling'] = {};
         }
 
         // Track largest scroll value
@@ -98,7 +97,8 @@ window.onload = () => {
   console.log(maxScroll);
   console.log(elements);
 
-  // Interpolate frames and set in styling
+  // Interpolate frame and set styling
+  interpFrameStyling(elements, 0);
 /*  for (let i = 0, len = elements.length; i < len; ++i) {
     elements[i].styling = intepolateStyling(elements[i].rawStyling);
   }*/
@@ -106,6 +106,29 @@ window.onload = () => {
   // Apply styles
 }
 
+/* ---==={ Interpolate frame styling }===---
+   - Iterate through all elements
+   - Interp styling from rawStyling and scroll position
+   - Apply style
+*/
+
+function interpFrameStyling(elements, curPos) {
+  // For each element ...
+  for (let i = 0, els = elements.length; i < els; ++i) {
+    // Check for stylings around current position
+    let curEl = elements[i];
+    let rawStyles = curEl.rawStyling;
+
+    for (let j = 0, styles = rawStyles.length; j < styles; ++j) {
+      // if curPos is before the first style position
+      if (curPos <= rawStyles[j].pos && j === 0 {
+        
+      }
+      // anything in between
+      // if curPos is equal or past the last style position
+    }
+  }
+}
 
 /* ---==={ Parse styling attributes }===---
    - Regex for styling attribute
@@ -139,6 +162,7 @@ function parseStyle(style) {
        ...
      }
  */
+/*
 function interpolateStyling(rawStyles) {
   let interpStyles = {};
   // For all pairs of styles in rawStyles ...
@@ -160,6 +184,7 @@ function interpolateStyling(rawStyles) {
           matchingStyles.push({
             pre: stylesOne[j].pre,
             valOne: stylesOne[j].value,
+            valTwo: stylesTwo[j].value,
             post: stylesOne[j].post
           });
         }
@@ -168,11 +193,12 @@ function interpolateStyling(rawStyles) {
 
     // Interpolate all styles in matchingStyles
     for (let j = 0, length = matchingStyles.length; j < length; ++j) {
-      // Interp
+      
     }
   }
 }
+*/
 
 /* ---==={ OnScroll }===---
-   - apply keyframe styling
+   - interp stye and apply keyframe styling
  */
