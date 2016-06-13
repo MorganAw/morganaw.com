@@ -12,5 +12,5 @@ Same as v1.0
 
 ##### Git Notes
 
-<master> hosts current deployment of the website.
-<vX.Y> 'X' denotes any major feature/design changes. 'Y' denotes content updates"
+`<master>` hosts current deployment of the website.
+`<vX.Y>` 'X' denotes any major feature/design changes. 'Y' denotes content updates"
