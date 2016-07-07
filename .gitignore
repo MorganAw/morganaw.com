@@ -36,6 +36,13 @@ jspm_packages
 # Optional REPL history
 .node_repl_history
 
+# OS X Nonsense
+.DS_Store
+
+# Elastic Beanstalk stuff
+.elasticbeanstalk
+
+# Unnecessary build files
 build/
 node_modules/
 static/packed/
